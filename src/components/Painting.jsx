@@ -13,7 +13,7 @@ export default function Painting({
         <img src={imageUrl} alt={title} width="480"/>
         <h2>{title}</h2>
         <p>
-          Автор <a href={authorUrl}>{authorTag}</a>
+          Автор: <a href={authorUrl}>{authorTag}</a>
         </p>
         <p>
           Ціна: {price} кредітов

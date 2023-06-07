@@ -3,18 +3,20 @@
 // import Painting from './components/Painting';
 import Section from './components/Section';
 import PaintingList from './components/PaintingList';
-import data from "../src/paintings.json";
+import UserList from "./components/UserList"
+import paintings from "../src/paintings.json";
+import users from "../src/users.json";
 
-function App(){
+export default function App(){
   return(
     <div>
       <Section title="Gallery">
-        <PaintingList items={data}/>
+        <PaintingList items={paintings}/>
       </Section>
 
-      <Section title="Shop" />
+      <Section title="Top 3 users">
+        <UserList clients={users}/>
+      </Section>
     </div>
   );
 }
-
-export default App;

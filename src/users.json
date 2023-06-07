@@ -1,0 +1,20 @@
+[
+    {
+        "id": "first",
+        "name": "Josh",
+        "age": 30,
+        "rating": 8.38
+    },
+    {
+        "id": "second",
+        "name": "Brayan",
+        "age": 24,
+        "rating": 7.87
+    },
+    {
+        "id": "third",
+        "name": "Rachel",
+        "age": 34,
+        "rating": 9.25
+    }
+]

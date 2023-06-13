@@ -37,7 +37,7 @@ export default function Painting({
           Кількість: {quantity}
         </p>
         <p>Доступність: {quantity < 5 ? "закінчується" : "є у наявності"}</p>
-        {quantity < 5 && (<p>Доступність: є в наявності</p>)} 
+        {/* {quantity > 5 && (<p>Доступність: є в наявності</p>)}  */}
         <button className={style.button_cart} type="button">Додати в кошик</button>
       </div>)
 }

@@ -1,0 +1,39 @@
+.drop_down {
+    position: relative;
+    width: 420px;
+    padding: 20px 0 0;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.drop_down_button {
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #92B5DF;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+    transition: box-shadow 250ms linear;
+    margin-bottom: 20px;
+}
+
+.drop_down_menu {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #92B5DF;
+    color: white;
+}

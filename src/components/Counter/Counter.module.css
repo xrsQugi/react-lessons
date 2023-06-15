@@ -15,7 +15,7 @@
     margin: 0;
 }
 
-button {
+.count_button {
     border: none;
     padding: 10px 15px;
     background-color: #92B5DF;
@@ -31,7 +31,7 @@ button {
     border-radius: 10px;
 }
   
-button:active {
+.count_button:active {
     box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
 }
   

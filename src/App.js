@@ -5,6 +5,7 @@ import Section from './components/Section';
 import PaintingList from './components/PaintingList/PaintingList.jsx';
 import paintings from "./components/PaintingList/paintings.json";
 import Counter from "./components/Counter/Counter"
+import DropDown from "./components/DropDown/DropDown"
 
 export default function App(){
   return(
@@ -12,7 +13,12 @@ export default function App(){
       <Section title="Gallery">
         <PaintingList items={paintings}/>
       </Section>
-      <Counter step={3}/>
+      <Section title="Counter">
+        <Counter step={3}/>
+      </Section>
+      <Section title="Dropdown">
+        <DropDown/>
+      </Section>
     </div>
   );
 }

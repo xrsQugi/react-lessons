@@ -1,4 +1,6 @@
 import css from "./Counter.module.css";
+import Controls from "./Controls";
+
 
 // function Counter() {
     // return ( 
@@ -39,23 +41,18 @@ export default class Counter extends Component{
     }
     
     render(){
-        const { step } = this.props;
+        // const { step } = this.props;
         
         return (
             <div className={css.wrap}>
                 <h1 className={css.title}>Hello, class component!</h1>
                 <span className={css.change_number}>{this.state.value}</span>
                 <div>
-                    <button 
-                        type="button" 
-                        onClick={this.HandleIncrement}
-                    >Plus {step}
-                    </button>
-                    <button 
-                        type="button"
-                        onClick={this.HandleDecrement}
-                    >Minus {step}
-                    </button>
+                    <Controls 
+                        onDecrement={this.HandleDecrement} 
+                        onIncrement={this.HandleIncrement}
+                        step={this.props.step}
+                    />
                 </div>
             </div>
         );

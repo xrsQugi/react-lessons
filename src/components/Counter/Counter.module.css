@@ -13,6 +13,7 @@
     /* outline: 1px solid red; */
     padding: 5px;
     margin: 0;
+    color: #374D5C;
 }
 
 .count_button {
@@ -41,4 +42,5 @@
     font-size: 64px;
     font-family: monospace;
     text-align: center;
+    color: #374D5C;
 }

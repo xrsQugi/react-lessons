@@ -1,5 +1,4 @@
 .drop_down {
-    position: relative;
     width: 420px;
     padding: 20px 0 0;
     border: 1px solid black;
@@ -34,6 +33,6 @@
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    background-color: #92B5DF;
+    background-color: #374D5C;
     color: white;
 }

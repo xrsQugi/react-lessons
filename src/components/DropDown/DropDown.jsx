@@ -17,7 +17,7 @@ export default class DropDown extends Component {
         }))
     }
 
-    //! замінили цю частину на toggle 
+    // ! замінили цю частину на функцію toggle 
     // Show = () => {
     //     this.setState({
     //         visible: true,

@@ -5,7 +5,7 @@ export default function Section({title, children}){
         <div>
             {/* <h2>{title}</h2> */}
             {/* {title && <h1 style={{textAlign: "center"}}>{title}</h1>} - вбудовані стилі */}
-            {title && <h1 style={{textAlign: "center"}}>{title}</h1>}
+            {title && <h1 style={{textAlign: "center", margin: 0}}>{title}</h1>}
             {children}
         </div>
     )

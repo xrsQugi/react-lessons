@@ -47,7 +47,7 @@ export default class Counter extends Component{
             <div className={css.wrap}>
                 <h1 className={css.title}>Hello, class component!</h1>
                 <span className={css.change_number}>{this.state.value}</span>
-                <div>
+                <div className={css.btn_block}>
                     <Controls 
                         onDecrement={this.HandleDecrement} 
                         onIncrement={this.HandleIncrement}

@@ -1,6 +1,9 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
-// import Painting from './components/Painting';
+
+//! import components
+import React, { Component } from 'react'
+
 import Section from "./components/Section";
 import PaintingList from "./components/PaintingList/PaintingList.jsx";
 import paintings from "./components/PaintingList/paintings.json";
@@ -8,19 +11,18 @@ import Counter from "./components/Counter/Counter";
 import DropDown from "./components/DropDown/DropDown";
 import Form from "./components/Form/Form";
 
+//! import styles
 import css from "./App.module.css"
-
-import React, { Component } from 'react'
 
 export default class App extends Component {
 
-  // handleSubmitForm = (data) => {
-  //   console.log('data :>> ', data);
-  // }
+  handleSubmitForm = (data) => {
+    console.log("data from form: ", data);
+  }
 
   render() {
     return (
-      <div class={css.section_parent}>
+      <div className={css.section_parent}>
         <Section title="Gallery">
           <PaintingList items={paintings}/>
         </Section>
@@ -31,8 +33,7 @@ export default class App extends Component {
           <DropDown/>
         </Section>
         <Section title="Form">
-          <Form/>
-          {/* <Form onSubmit={this.handleSubmitForm}/> */}
+          <Form onSubmit={this.handleSubmitForm}/>
         </Section>
       </div>
     )

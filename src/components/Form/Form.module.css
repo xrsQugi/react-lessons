@@ -8,7 +8,7 @@
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
-    gap: 20px;
+    gap: 15px;
 }
 
 .submit_btn{
@@ -46,5 +46,5 @@
     font-size: 18px;
     font-family: monospace;
     color: #374D5C;
-    padding: 0 10px;
+    padding: 5px 10px;
 }

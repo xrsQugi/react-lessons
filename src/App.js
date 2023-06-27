@@ -10,6 +10,7 @@ import paintings from "./components/PaintingList/paintings.json";
 import Counter from "./components/Counter/Counter";
 import DropDown from "./components/DropDown/DropDown";
 import Form from "./components/Form/Form";
+import LifeCycle from './components/LifeCycle/LifeCycle';
 
 //! import styles
 import css from "./App.module.css"
@@ -34,6 +35,9 @@ export default class App extends Component {
         </Section>
         <Section title="Form">
           <Form onSubmit={this.handleSubmitForm}/>
+        </Section>
+        <Section title="Live cycle">
+          <LifeCycle item={5}></LifeCycle>
         </Section>
       </div>
     )

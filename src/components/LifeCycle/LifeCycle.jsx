@@ -40,11 +40,11 @@ class LifeCycle extends Component {
     render() {
         console.log('render-1');
         return (
-            <>
+            <div className={css.lifeCycle_div}>
                 {console.log('render-2')}
                 <button type="submit" className={css.submit_btn} onClick={this.handleBtn}>Sign</button>
                 <p>{this.state.value}</p>
-            </>
+            </div>
         )
   }
 }

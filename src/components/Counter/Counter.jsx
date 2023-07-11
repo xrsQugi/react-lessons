@@ -1,18 +1,7 @@
 import css from "./Counter.module.css";
 import Controls from "./Controls";
 
-
-// function Counter() {
-    // return ( 
-        //     <>
-        //         <h1>Hello</h1>
-        //     </>
-        //  );
-        // }
-        
-        // export default Counter;
-        
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 //! rcc + Tab - отримаємо таку структуру як знизу
 export default class Counter extends Component{

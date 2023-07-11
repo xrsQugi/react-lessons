@@ -8,13 +8,13 @@ export default function Controls({onDecrement, onIncrement, step}) {
                 className={css.count_button}
                 type="button" 
                 onClick={onIncrement}
-            >Plus {step}
+            > Plus {step}
             </button>
             <button 
                 className={css.count_button}
                 type="button"
                 onClick={onDecrement}
-            >Minus {step}
+            > Minus {step}
             </button>
         </>
     );

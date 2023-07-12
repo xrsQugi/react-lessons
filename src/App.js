@@ -28,7 +28,7 @@ export default class App extends Component {
           <PaintingList items={paintings}/>
         </Section>
         <Section title="Counter">
-          <Counter step={3}/>
+          <Counter step={2}/>
         </Section>
         <Section title="Dropdown">
           <DropDown/>

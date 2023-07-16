@@ -11,6 +11,7 @@ import Counter from "./components/Counter/Counter";
 import DropDown from "./components/DropDown/DropDown";
 import Form from "./components/Form/Form";
 import LifeCycle from './components/LifeCycle/LifeCycle';
+import CounterSecond from './components/CounterSecond/CounterSecond';
 
 //! import styles
 import css from "./App.module.css"
@@ -39,6 +40,10 @@ export default class App extends Component {
         <Section title="Live cycle">
           <LifeCycle item={5}></LifeCycle>
         </Section>
+        <Section title="Counter 2">
+          <CounterSecond/>
+        </Section>
+
       </div>
     )
   }

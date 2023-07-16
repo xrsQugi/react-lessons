@@ -30,7 +30,10 @@
 
 .drop_down_menu {
     width: 100%;
-    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 0;
     text-align: center;
     background-color: #374D5C;
     color: white;

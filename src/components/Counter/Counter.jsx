@@ -1,6 +1,6 @@
 import css from "./Counter.module.css";
 import Controls from "./Controls";
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 
 //! rcc + Tab - отримаємо таку структуру як знизу
 //! Class component

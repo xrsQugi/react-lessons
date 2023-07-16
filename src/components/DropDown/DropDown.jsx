@@ -1,5 +1,7 @@
 import css from "./DropDown.module.css";
 import React, { Component } from 'react'
+import Clock from '../Clock/Clock';
+
 
 export default class DropDown extends Component {
 
@@ -38,7 +40,11 @@ export default class DropDown extends Component {
             <button type="button" className={css.drop_down_button} onClick={this.Toggle}>{visible ? "Hide" : "Show"}</button>
             {/* <button type="button" className={css.drop_down_button} onClick={this.Toggle}>Show</button>
             <button type="button" className={css.drop_down_button} onClick={this.Toggle}>Hide</button> */}
-            {visible && <div className={css.drop_down_menu}>Dropdown menu</div>}
+            {visible && 
+                <div className={css.drop_down_menu}>
+                    <Clock></Clock>
+                </div>
+            }
         </div>
         )
   }

@@ -4,14 +4,14 @@
 //! import components
 import React, { Component } from 'react'
 
-import Section from "./components/Section";
-import PaintingList from "./components/PaintingList/PaintingList.jsx";
-import paintings from "./components/PaintingList/paintings.json";
-import Counter from "./components/Counter/Counter";
-import DropDown from "./components/DropDown/DropDown";
-import Form from "./components/Form/Form";
-import LifeCycle from './components/LifeCycle/LifeCycle';
-import CounterSecond from './components/CounterSecond/CounterSecond';
+import Section from "./Section/Section";
+import PaintingList from "./PaintingList/PaintingList.jsx";
+import paintings from "./PaintingList/paintings.json";
+import Counter from "./Counter/Counter";
+import DropDown from "./DropDown/DropDown";
+import Form from "./Form/Form";
+import LifeCycle from './LifeCycle/LifeCycle';
+import CounterSecond from './CounterSecond/CounterSecond';
 
 //! import styles
 import css from "./App.module.css"

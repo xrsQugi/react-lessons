@@ -25,3 +25,11 @@
 .submit_btn:active {
     box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
 }
+
+.number_value{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    text-align: center;
+    color: #374D5C;
+}

@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
+import css from './Section.module.css';
 
 export default function Section({title, children}){
     return(
         <div>
-            {/* <h2>{title}</h2> */}
-            {/* {title && <h1 style={{textAlign: "center"}}>{title}</h1>} - вбудовані стилі */}
-            {title && <h1 style={{textAlign: "center", margin: 0}}>{title}</h1>}
+            {title && <h1 className={css.title_text}>{title}</h1>}
             {children}
         </div>
     )

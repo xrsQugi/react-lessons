@@ -3,6 +3,7 @@ import Controls from "./Controls";
 import React, { Component, useState, useEffect } from 'react';
 
 //! rcc + Tab - отримаємо таку структуру як знизу
+
 //! Class component
 // export default class Counter extends Component{
 
@@ -27,8 +28,6 @@ import React, { Component, useState, useEffect } from 'react';
 //     }
     
 //     render(){
-//         // const { step } = this.props;
-        
 //         return (
 //             <div className={css.wrap}>
 //                 <h1 className={css.title}>Hello, class component!</h1>

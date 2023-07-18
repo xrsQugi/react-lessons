@@ -66,8 +66,8 @@ class LifeCycle extends Component {
         // console.log('-render-');
         return (
             <div className={css.lifeCycle_div}>
-                <button type="submit" className={css.submit_btn} onClick={this.handleBtn}>Sign</button>
-                <p>{this.state.value}</p>
+                <button type="submit" className={css.submit_btn} onClick={this.handleBtn}>Increase on {this.props.item}</button>
+                <p className={css.number_value}>{this.state.value}</p>
             </div>
         )
   }

@@ -1,19 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 
 export default function Clock() {
     const [time, setTime] = useState(new Date().toLocaleTimeString());
-
-    // useEffect = setInterval(
-    //     () => setTime(new Date().toLocaleTimeString())
-    // , 1000);
     
     useEffect(() => {
         console.log('time:>> ', time);
         setInterval(
-            () => setTime(new Date().toLocaleTimeString())
-        , 1000);
+            () => setTime(new Date().toLocaleTimeString()), 1000
+        );
     }, [time])
 
-    return <p>{time}</p>;
+    return (
+        <>
+            <p>{time}</p>
+        </>
+    );
 }
 

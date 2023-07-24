@@ -14,7 +14,8 @@ import DropDown from "./DropDown/DropDown";
 import Form from "./Form/Form";
 import LifeCycle from './LifeCycle/LifeCycle';
 import CounterSecond from './CounterSecond/CounterSecond';
-import { UserMenu } from "./User/UserMenu";
+import UserMenu from "./User/UserMenu";
+import RenderCount from "./Render/RenderCount";
 
 //! import styles
 import css from "./App.module.css"
@@ -49,7 +50,9 @@ export default class App extends Component {
         <Section title="useContext">
           <UserMenu />
         </Section>
-
+        <Section title="useRef">
+          <RenderCount />
+        </Section>
       </div>
     )
   }

@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const UserContext = createContext();
 export const useUser = () => useContext(UserContext);
 
-export const UserProvider = ({ children }) => {
+const UserProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState(null);
 
@@ -23,3 +23,5 @@ export const UserProvider = ({ children }) => {
     </UserContext.Provider>
   );
 };
+
+export default UserProvider;

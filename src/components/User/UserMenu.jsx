@@ -2,7 +2,7 @@ import { useUser } from "./UserContext";
 import css from './Usermenu.module.css';
 
 
-export const UserMenu = () => {
+const UserMenu = () => {
   const { isLoggedIn, username, logIn, logOut } = useUser();
 
   return (
@@ -16,3 +16,5 @@ export const UserMenu = () => {
     </div>
   );
 };
+
+export default UserMenu;

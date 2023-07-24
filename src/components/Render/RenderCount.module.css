@@ -7,7 +7,7 @@
     margin: 20px auto 0;
 }
 
-.username{
+.text{
     margin: 0;
     font-size: 20px;
     font-weight: 700;
@@ -16,7 +16,17 @@
     color: #374D5C;
 }
 
-.btn_log {
+.input{
+    border: 1px #374D5C solid;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: monospace;
+    color: #374D5C;
+    padding: 5px 10px;
+}
+
+.btn_focus{
+    width: 200px;
     border: none;
     padding: 10px 15px;
     background-color: #92B5DF;
@@ -30,7 +40,7 @@
     transition: box-shadow 250ms linear;
     border-radius: 10px;
 }
-  
-.btn_log:active {
+
+.btn_focus:active {
     box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
 }

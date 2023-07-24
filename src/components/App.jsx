@@ -1,6 +1,8 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 
+
+
 //! import components
 import React, { Component } from 'react'
 
@@ -12,6 +14,7 @@ import DropDown from "./DropDown/DropDown";
 import Form from "./Form/Form";
 import LifeCycle from './LifeCycle/LifeCycle';
 import CounterSecond from './CounterSecond/CounterSecond';
+import { UserMenu } from "./User/UserMenu";
 
 //! import styles
 import css from "./App.module.css"
@@ -42,6 +45,9 @@ export default class App extends Component {
         </Section>
         <Section title="Counter 2">
           <CounterSecond/>
+        </Section>
+        <Section title="useContext">
+          <UserMenu />
         </Section>
 
       </div>

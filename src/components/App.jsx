@@ -24,14 +24,14 @@ import DropDownPage from '../pages/DropDownPage/DropDownPage';
 import css from './App.module.css';
 
 const StyledLink = styled(NavLink)`
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-family: Inter;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background-color: #e84d4d;
+  background-color: #F24D4D;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -58,6 +58,7 @@ export default function App() {
         <StyledLink to="/hooks">Hooks</StyledLink>
         <StyledLink to="/dropdown">Dropdown & live cycle</StyledLink>
       </nav>
+      <hr className={css.line}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/paintings" element={<PaintingList items={paintings} />} />

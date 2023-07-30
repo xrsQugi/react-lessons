@@ -1,0 +1,30 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    color: #2A3563;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.photo_home{
+    max-width: 900px;
+    width: 100%;
+}
+
+.text{
+    color: #2A3563;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;  
+}

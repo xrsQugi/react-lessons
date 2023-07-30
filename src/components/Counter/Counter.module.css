@@ -2,18 +2,20 @@
 .wrap {
     width: 418px;
     padding: 30px;
-    border: 1px solid black;
+    border: 2px solid #2A3563;
     text-align: center;
     margin: 20px auto 0;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
   
 .title {
+    font-family: Inter;
     text-align: center;
-    /* outline: 1px solid red; */
-    padding: 5px;
     margin: 0;
-    color: #374D5C;
+    color: #2A3563;
 }
 
 .btn_block{
@@ -25,9 +27,11 @@
 
 .count_button {
     border: none;
-    padding: 10px 15px;
-    background-color: #92B5DF;
-    color: #fff;
+    padding: 10px 20px;
+    width: 110px;
+    background-color: #EC9B3C;
+    color: #2A3563;
+    font-family: Inter;
     font-size: 18px;
     font-weight: 500;
     font-family: inherit;
@@ -43,10 +47,8 @@
 }
   
 .change_number {
-    margin-right: 15px;
-    margin-left: 15px;
     font-size: 64px;
-    font-family: monospace;
+    font-family: Inter;
     text-align: center;
-    color: #374D5C;
+    color: #2A3563;
 }

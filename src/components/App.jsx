@@ -1,79 +1,71 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 
-
-
 //! import components
-import React, { Component } from 'react'
+import React from 'react';
+import { Routes, Route, NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
-import Section from "./Section/Section";
-import PaintingList from "./PaintingList/PaintingList.jsx";
-import paintings from "./PaintingList/paintings.json";
-import Counter from "./Counter/Counter";
-import DropDown from "./DropDown/DropDown";
-import Form from "./Form/Form";
-import LifeCycle from './LifeCycle/LifeCycle';
-import CounterSecond from './CounterSecond/CounterSecond';
-import UserMenu from "./User/UserMenu";
-import RenderCount from "./Render/RenderCount";
+import Home from '../pages/Home/Home';
+
+import PaintingList from '../pages/PaintingList/PaintingList.jsx';
+import paintings from '../pages/PaintingList/paintings.json';
+
+import Counters from '../pages/Counters/Counters';
+import Hooks from '../pages/Hooks/Hooks';
+
+import Form from '../pages/Form/Form';
+
+import DropDownPage from '../pages/DropDownPage/DropDownPage';
+
+
 
 //! import styles
-import css from "./App.module.css"
+import css from './App.module.css';
 
-export default class App extends Component {
+const StyledLink = styled(NavLink)`
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #e84d4d;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 
-  handleSubmitForm = (data) => {
-    console.log("data from form: ", data);
+  &.active {
+    background-color: #581616;
   }
+`;
 
-  render() {
-    return (
-      <div className={css.section_parent}>
-        <Section title="Gallery">
-          <PaintingList items={paintings}/>
-        </Section>
-        <Section title="Counter">
-          <Counter step={2}/>
-        </Section>
-        <Section title="Dropdown">
-          <DropDown/>
-        </Section>
-        <Section title="Form">
-          <Form onSubmit={this.handleSubmitForm}/>
-        </Section>
-        <Section title="Live cycle">
-          <LifeCycle item={5}></LifeCycle>
-        </Section>
-        <Section title="Counter 2">
-          <CounterSecond/>
-        </Section>
-        <Section title="useContext">
-          <UserMenu />
-        </Section>
-        <Section title="useRef">
-          <RenderCount />
-        </Section>
-      </div>
-    )
-  }
+export default function App() {
+  const handleSubmitForm = data => {
+    console.log('data from form: ', data);
+  };
+
+  return (
+    <div className={css.container}>
+      <nav className={css.navigation}>
+        <StyledLink to="/" end>
+          Home
+        </StyledLink>
+        <StyledLink to="/paintings">Paintings</StyledLink>
+        <StyledLink to="/counters">Counters</StyledLink>
+        <StyledLink to="/form">Form</StyledLink>
+        <StyledLink to="/hooks">Hooks</StyledLink>
+        <StyledLink to="/dropdown">Dropdown & live cycle</StyledLink>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/paintings" element={<PaintingList items={paintings} />} />
+        <Route path="/counters" element={<Counters />} />
+        <Route path="/form" element={<Form onSubmit={handleSubmitForm} />} />
+        <Route path="/hooks" element={<Hooks />} />
+        <Route path="/dropdown" element={<DropDownPage />} />
+      </Routes>
+    </div>
+  );
 }
-
-
-// export default function App(){
-//   return(
-//     <div>
-//       <Section title="Gallery">
-//         <PaintingList items={paintings}/>
-//       </Section>
-//       <Section title="Counter">
-//         <Counter step={3}/>
-//       </Section>
-//       <Section title="Dropdown">
-//         <DropDown/>
-//       </Section>
-//       <Section title="Form">
-//         <Form onSubmit={handleSubmitInfo}/>
-//       </Section>
-//     </div>
-//   );
-// }

@@ -1,0 +1,8 @@
+.block{
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

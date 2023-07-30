@@ -1,5 +1,19 @@
+.block{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .title_text{
     margin: 0;
     padding: 0;
+    color: #2A3563;
     text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }

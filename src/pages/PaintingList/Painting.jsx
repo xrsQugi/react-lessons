@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import style from './PaintingList.module.css';
+import css from './PaintingList.module.css';
 
 //*----------вбудовані стилі----------
 // const divStyle = {
@@ -23,22 +23,22 @@ export default function Painting({
   quantity
 }){
     return(
-      //* <div style={divStyle}> - вбудовані стилі
-      <div className={style.card_picture}>
-        <img className={style.picture} src={imageUrl} alt={title} width="480"/>
-        <h2>{title}</h2>
-        <p>
-          Автор: <a className={style.author_tag} href={authorUrl}>{authorTag}</a>
+      //* <div css={divStyle}> - вбудовані стилі
+      <div className={css.card_picture}>
+        <img className={css.picture} src={imageUrl} alt={title} width="480"/>
+        <h2 className={css.title}>{title}</h2>
+        <p className={css.text}>
+          Автор: <a className={css.author_tag} href={authorUrl}>{authorTag}</a>
         </p>
-        <p>
+        <p className={css.text}>
           Ціна: {price} кредітов
         </p>
-        <p>
+        <p className={css.text}>
           Кількість: {quantity}
         </p>
-        <p>Доступність: {quantity < 5 ? "закінчується" : "є у наявності"}</p>
+        <p className={css.text}>Доступність: {quantity < 5 ? "закінчується" : "є у наявності"}</p>
         {/* {quantity > 5 && (<p>Доступність: є в наявності</p>)}  */}
-        <button className={style.button_cart} type="button">Додати в кошик</button>
+        <button className={css.button_cart} type="button">Додати в кошик</button>
       </div>)
 }
 

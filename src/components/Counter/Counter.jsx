@@ -63,7 +63,7 @@ export default function Counter({step=1}){
         <>
             <div className={css.wrap}>
                 <h1 className={css.title}>
-                    Hello, class component!
+                    Hello, hooks!
                 </h1>
                 <span className={css.change_number}>
                     {value}

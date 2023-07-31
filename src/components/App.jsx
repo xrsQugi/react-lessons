@@ -56,7 +56,7 @@ export default function App() {
         <StyledLink to="/counters">Counters</StyledLink>
         <StyledLink to="/form">Form</StyledLink>
         <StyledLink to="/hooks">Hooks</StyledLink>
-        <StyledLink to="/dropdown">Dropdown & live cycle</StyledLink>
+        <StyledLink to="/dropdown">Dropdown & Live cycle</StyledLink>
       </nav>
       <hr className={css.line}/>
       <Routes>

@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 418px;
+    max-width: 420px;
     padding: 30px;
-    border: 1px solid #374D5C;
+    border: 2px solid #2A3563;
     text-align: center;
     margin: 20px auto 0;
     border-radius: 10px;
@@ -15,8 +15,9 @@
     width: 200px;
     border: none;
     padding: 10px 15px;
-    background-color: #92B5DF;
-    color: #fff;
+    background-color: #2A3563;
+    font-family: Inter;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
     font-family: inherit;
@@ -24,7 +25,12 @@
     outline: none;
     box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
     transition: box-shadow 250ms linear;
-    border-radius: 10px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.submit_btn:hover {
+    background-color: #EC9B3C;
 }
 
 .submit_btn:active {
@@ -33,18 +39,18 @@
 
 .label_text{
     font-size: 24px;
-    font-family: monospace;
+    font-family: Inter;
     text-align: center;
-    color: #374D5C;
+    color: #2A3563;
     display: flex; 
     gap: 10px;
 }
 
 .input_place{
-    border: 1px #374D5C solid;
-    border-radius: 10px;
+    border: 1px #2A3563 solid;
+    border-radius: 5px;
     font-size: 18px;
-    font-family: monospace;
-    color: #374D5C;
-    padding: 5px 10px;
+    font-family: Inter;
+    color: #2A3563;
+    padding: 10px 15px;
 }

@@ -3,32 +3,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 20px auto 0;
+    gap: 20px;
+    margin: 0 auto;
+    border: 1px #2A3563 solid;
+    padding: 20px 50px;
+    border-radius: 5px;
 }
 
 .username{
     margin: 0;
     font-size: 20px;
     font-weight: 700;
-    font-family: inherit;
+    font-family: Inter;
     text-align: center;
-    color: #374D5C;
+    color: #2A3563;
 }
 
 .btn_log {
     border: none;
-    padding: 10px 15px;
-    background-color: #92B5DF;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #EC9B3C;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    font-family: inherit;
+    font-family: Inter;
     cursor: pointer;
     outline: none;
     box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
     transition: box-shadow 250ms linear;
-    border-radius: 10px;
+    border-radius: 5px;
 }
   
 .btn_log:active {

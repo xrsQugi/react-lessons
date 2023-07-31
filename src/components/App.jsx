@@ -10,15 +10,11 @@ import Home from '../pages/Home/Home';
 
 import PaintingList from '../pages/PaintingList/PaintingList.jsx';
 import paintings from '../pages/PaintingList/paintings.json';
-
 import Counters from '../pages/Counters/Counters';
-import Hooks from '../pages/Hooks/Hooks';
-
 import Form from '../pages/Form/Form';
-
+import Hooks from '../pages/Hooks/Hooks';
 import DropDownPage from '../pages/DropDownPage/DropDownPage';
-
-
+import NotFound from '../pages/NotFound/NotFound';
 
 //! import styles
 import css from './App.module.css';
@@ -49,23 +45,22 @@ export default function App() {
   return (
     <div className={css.container}>
       <nav className={css.navigation}>
-        <StyledLink to="/" end>
-          Home
-        </StyledLink>
-        <StyledLink to="/paintings">Paintings</StyledLink>
-        <StyledLink to="/counters">Counters</StyledLink>
-        <StyledLink to="/form">Form</StyledLink>
-        <StyledLink to="/hooks">Hooks</StyledLink>
-        <StyledLink to="/dropdown">Dropdown & Live cycle</StyledLink>
+        <StyledLink to="/react-lessons" end>Home</StyledLink>
+        <StyledLink to="/react-lessons/paintings">Paintings</StyledLink>
+        <StyledLink to="/react-lessons/counters">Counters</StyledLink>
+        <StyledLink to="/react-lessons/form">Form</StyledLink>
+        <StyledLink to="/react-lessons/hooks">Hooks</StyledLink>
+        <StyledLink to="/react-lessons/dropdown">Dropdown & Live cycle</StyledLink>
       </nav>
       <hr className={css.line}/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/paintings" element={<PaintingList items={paintings} />} />
-        <Route path="/counters" element={<Counters />} />
-        <Route path="/form" element={<Form onSubmit={handleSubmitForm} />} />
-        <Route path="/hooks" element={<Hooks />} />
-        <Route path="/dropdown" element={<DropDownPage />} />
+        <Route path="/react-lessons" element={<Home />} />
+        <Route path="/react-lessons/paintings" element={<PaintingList items={paintings} />} />
+        <Route path="/react-lessons/counters" element={<Counters />} />
+        <Route path="/react-lessons/form" element={<Form onSubmit={handleSubmitForm} />} />
+        <Route path="/react-lessons/hooks" element={<Hooks />} />
+        <Route path="/react-lessons/dropdown" element={<DropDownPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,24 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.title{
+    color: #2A3563;
+    font-size: 100px;
+    font-family: Inter;
+    margin: 20px auto 0;
+}
+
+.text_page{
+    color: #2A3563;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    margin: 0;
+}

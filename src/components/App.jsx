@@ -45,7 +45,7 @@ export default function App() {
   return (
     <div className={css.container}>
       <nav className={css.navigation}>
-        <StyledLink to="/react-lessons" end>Home</StyledLink>
+        <StyledLink to="/react-lessons/" end>Home</StyledLink>
         <StyledLink to="/react-lessons/paintings">Paintings</StyledLink>
         <StyledLink to="/react-lessons/counters">Counters</StyledLink>
         <StyledLink to="/react-lessons/form">Form</StyledLink>

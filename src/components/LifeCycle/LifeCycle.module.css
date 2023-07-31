@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid #2A3563;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 20px;
 }
 
 .submit_btn{
@@ -10,11 +14,11 @@
     border: none;
     padding: 10px 15px;
     margin: 0 auto;
-    background-color: #92B5DF;
-    color: #fff;
+    background-color: #2A3563;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    font-family: inherit;
+    font-family: Inter;
     cursor: pointer;
     outline: none;
     box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
@@ -29,7 +33,8 @@
 .number_value{
     font-size: 20px;
     font-weight: 700;
-    font-family: inherit;
+    font-family: Inter;
     text-align: center;
-    color: #374D5C;
+    color: #2A3563;
+    margin: 0;
 }

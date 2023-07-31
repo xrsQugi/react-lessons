@@ -1,8 +1,9 @@
 .drop_down {
-    width: 420px;
+    max-width: 420px;
+    min-width: 300px;
     padding: 20px 0 0;
-    border: 1px solid black;
-    margin: 20px auto 0;
+    border: 1px solid #2A3563;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -16,11 +17,11 @@
     width: 100px;
     text-align: center;
     padding: 10px 20px;
-    background-color: #92B5DF;
-    color: #fff;
+    background-color: #2A3563;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    font-family: inherit;
+    font-family: Inter;
     cursor: pointer;
     outline: none;
     box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
@@ -32,10 +33,10 @@
     width: 100%;
     font-size: 18px;
     font-weight: 500;
-    font-family: inherit;
+    font-family: Inter;
     padding: 0;
     text-align: center;
-    background-color: #374D5C;
+    background-color: #2A3563;
     color: white;
     border-radius: 0 0 10px 10px;
 }
